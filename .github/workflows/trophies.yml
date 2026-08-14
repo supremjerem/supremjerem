@@ -1,0 +1,67 @@
+name: Refresh trophy card
+
+# The upstream trophy service is a volunteer-run deployment that can (and does) go
+# down. So the README never points at it directly: this job snapshots the card into
+# assets/trophies.svg, and only overwrites that file when the download is a valid,
+# non-error SVG. If upstream dies, the last good snapshot simply stays in place.
+
+on:
+  schedule:
+    - cron: "20 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  TROPHY_URL: "https://github-trophies.vercel.app/?username=supremjerem&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8&title=MultiLanguage,LongTimeUser,NewUser,PullRequest,Commits,Followers,Repositories"
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download trophy card
+        id: download
+        run: |
+          set -uo pipefail
+          if ! curl -sSfL --retry 3 --retry-delay 5 --max-time 60 "$TROPHY_URL" -o candidate.svg; then
+            echo "Trophy service unreachable — keeping the committed snapshot."
+            echo "valid=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          size=$(wc -c < candidate.svg)
+          if [ "$size" -lt 5000 ] \
+            || ! head -c 4000 candidate.svg | grep -q '<svg' \
+            || grep -qiE 'something went wrong|maximum retries|error' candidate.svg; then
+            echo "Download looks like an error card (${size} bytes) — keeping the committed snapshot."
+            echo "valid=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "Downloaded a valid card (${size} bytes)."
+          echo "valid=true" >> "$GITHUB_OUTPUT"
+
+      - name: Commit if changed
+        if: steps.download.outputs.valid == 'true'
+        run: |
+          set -euo pipefail
+          mv candidate.svg assets/trophies.svg
+
+          if git diff --quiet -- assets/trophies.svg; then
+            echo "Card unchanged — nothing to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/trophies.svg
+          git commit -m "Refresh trophy card"
+          git push
+
+      - name: Clean up
+        if: always()
+        run: rm -f candidate.svg

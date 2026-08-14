@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-label="Jeremie Cavellec — Product Manager, AI products">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#141A2E"/>
+      <stop offset="55%" stop-color="#101426"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+
+    <radialGradient id="glowViolet" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6E45E2" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#6E45E2" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#6E45E2" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowTeal" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#88D3CE" stop-opacity="0.42"/>
+      <stop offset="60%" stop-color="#88D3CE" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#88D3CE" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowCoral" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF5F6D" stop-opacity="0.34"/>
+      <stop offset="60%" stop-color="#FF5F6D" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FF5F6D" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="rule" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6E45E2"/>
+      <stop offset="50%" stop-color="#88D3CE"/>
+      <stop offset="100%" stop-color="#FF5F6D"/>
+    </linearGradient>
+
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#88D3CE" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#88D3CE" stop-opacity="0"/>
+    </linearGradient>
+
+    <clipPath id="card">
+      <rect x="0" y="0" width="1200" height="280" rx="18"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="1200" height="280" fill="url(#bg)"/>
+
+    <!-- soft colour fields -->
+    <circle cx="150" cy="60"  r="300" fill="url(#glowViolet)"/>
+    <circle cx="980" cy="250" r="320" fill="url(#glowTeal)"/>
+    <circle cx="1160" cy="30" r="240" fill="url(#glowCoral)"/>
+
+    <!-- quiet grid -->
+    <g stroke="#88D3CE" stroke-opacity="0.055" stroke-width="1">
+      <path d="M0 70.5H1200M0 140.5H1200M0 210.5H1200"/>
+      <path d="M120.5 0V280M240.5 0V280M360.5 0V280M480.5 0V280M600.5 0V280M720.5 0V280M840.5 0V280M960.5 0V280M1080.5 0V280"/>
+    </g>
+
+    <!-- accent rule -->
+    <rect x="72" y="96" width="4" height="88" rx="2" fill="url(#rule)"/>
+
+    <g font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+      <text x="104" y="118" fill="#8B93A7" font-size="15" font-weight="600" letter-spacing="4.5">PRODUCT MANAGER</text>
+      <text x="104" y="172" fill="#F2F5FA" font-size="52" font-weight="700" letter-spacing="-0.6">Jeremie Cavellec</text>
+      <text x="104" y="206" fill="#88D3CE" font-size="18" font-weight="500" letter-spacing="0.2">Building AI products — and a few small things on the side.</text>
+    </g>
+
+    <!-- trailing hairline -->
+    <rect x="104" y="232" width="420" height="1" fill="url(#fade)"/>
+
+    <rect x="0.5" y="0.5" width="1199" height="279" rx="18" fill="none" stroke="#6E45E2" stroke-opacity="0.30"/>
+  </g>
+</svg>
