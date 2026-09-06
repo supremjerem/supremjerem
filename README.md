@@ -17,13 +17,7 @@
 
 ## Hello
 
-I'm a **Product Manager working primarily on AI products** — the craft of turning a model
-that *can* do something into a product someone actually reaches for. There's no settled
-playbook for it yet. That's precisely what makes it worth doing.
 
-Before product, I spent a decade in software engineering. It taught me the expensive
-lesson: the hard part was never the building — it was deciding what deserved to be built.
-So I moved to the side of the table where that gets decided.
 
 <br/>
 
