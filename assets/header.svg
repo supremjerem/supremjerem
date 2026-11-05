@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-label="Jeremie Cavellec — Product Manager, AI products">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-label="Jeremie Cavellec — Product Manager, Aerospace &amp; Defence">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#141A2E"/>
@@ -60,7 +60,6 @@
     <g font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif">
       <text x="104" y="118" fill="#8B93A7" font-size="15" font-weight="600" letter-spacing="4.5">PRODUCT MANAGER</text>
       <text x="104" y="172" fill="#F2F5FA" font-size="52" font-weight="700" letter-spacing="-0.6">Jeremie Cavellec</text>
-      <text x="104" y="206" fill="#88D3CE" font-size="18" font-weight="500" letter-spacing="0.2">Building AI products — and a few small things on the side.</text>
     </g>
 
     <!-- trailing hairline -->

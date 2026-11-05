@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/header.svg" alt="Jeremie Cavellec — Product Manager" width="100%" />
+<img src="assets/header.svg" alt="Jeremie Cavellec — Product Manager, Aerospace & Defence" width="100%" />
 
 <br/><br/>
 
@@ -15,25 +15,7 @@
 
 <br/>
 
-## Hello
-
-
-
-<br/>
-
-## How I think about the work
-
-- **Start from the problem, not the feature.** The best specs are mostly evidence.
-- **Ship the smallest thing that settles the argument.** Opinions are cheap; usage isn't.
-- **Write it down.** A decision that isn't written didn't happen.
-- **AI is a material, not a garnish.** Design for what it gets wrong, not just what it gets right.
-
-<br/>
-
-## What's on this profile
-
-A handful of small personal projects and things I've built for other people — side
-experiments, favours, weekend ideas.
+## Projects
 
 <table>
 <tr>
@@ -116,20 +98,3 @@ Pong on plain HTML5 Canvas. No dependencies, no build step, no excuses.
 </div>
 
 <br/>
-
-<div align="center">
-
-<img src="assets/divider.svg" alt="" width="100%" />
-
-<br/>
-
-### Let's talk products
-
-<a href="https://www.linkedin.com/in/jcavellec/">
-  <img src="https://img.shields.io/badge/Say%20hello%20on%20LinkedIn-6E45E2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Say hello on LinkedIn" />
-</a>
-<a href="mailto:supremjerem@icloud.com">
-  <img src="https://img.shields.io/badge/supremjerem%40icloud.com-FF5F6D?style=for-the-badge&logo=maildotru&logoColor=white" alt="Email supremjerem@icloud.com" />
-</a>
-
-</div>
