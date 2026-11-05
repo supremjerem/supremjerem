@@ -21,11 +21,12 @@
 <tr>
 <td width="50%" valign="top">
 
-### [AMTARC](https://github.com/supremjerem/amtarc)
+### [AMTARC Web](https://github.com/supremjerem/amtarc-web)
 
-Website for a French sports-shooting club — public site plus an admin back-office.
+Website for a French sports-shooting club — public site plus an admin back-office,
+rewritten from scratch in .NET.
 
-`Next.js` `NestJS` `Prisma` `PostgreSQL`
+`ASP.NET Core` `C#` `EF Core` `PostgreSQL`
 
 </td>
 <td width="50%" valign="top">
@@ -69,7 +70,16 @@ Pong on plain HTML5 Canvas. No dependencies, no build step, no excuses.
 `JavaScript` `Canvas`
 
 </td>
-<td width="50%" valign="top"></td>
+<td width="50%" valign="top">
+
+### [ReconVision](https://github.com/supremjerem/reconvision)
+
+Face recognition on home video streams: tells you whether it is you, a stranger or an
+animal, and pushes the result to your phone. Runs entirely on your own hardware.
+
+`Python` `ArcFace` `Self-hosted`
+
+</td>
 </tr>
 </table>
 
